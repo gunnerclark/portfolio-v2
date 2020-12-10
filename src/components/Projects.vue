@@ -169,15 +169,15 @@ export default {
 				const tempProjectID = 'project' + this.tempIndex;
 				document.getElementById(tempProjectID).style.pointerEvents =
 					'auto';
-				document.getElementById(tempProjectID).style.opacity = '100%';
+				document.getElementById(tempProjectID).style.opacity = '1';
 				document.getElementById(tempBtnID).style.pointerEvents = 'none';
-				document.getElementById(tempBtnID).style.opacity = '0%';
+				document.getElementById(tempBtnID).style.opacity = '0';
 			}
 			if (boolean) {
 				document.getElementById(projectID).style.pointerEvents = 'none';
-				document.getElementById(projectID).style.opacity = '20%';
+				document.getElementById(projectID).style.opacity = '0.2';
 				document.getElementById(btnID).style.pointerEvents = 'auto';
-				document.getElementById(btnID).style.opacity = '100%';
+				document.getElementById(btnID).style.opacity = '1';
 				this.tempIndex = index;
 			} else {
 				for (let i = 0; i < store.state.projects.length; i++) {
@@ -189,7 +189,7 @@ export default {
 						'100%';
 					document.getElementById(allBtnID).style.pointerEvents =
 						'none';
-					document.getElementById(allBtnID).style.opacity = '0%';
+					document.getElementById(allBtnID).style.opacity = '0';
 				}
 			}
 		},
@@ -332,7 +332,7 @@ export default {
 	justify-content: center;
 	align-items: center;
 	pointer-events: none;
-	opacity: 0%;
+	opacity: 0;
 	height: 30vh;
 	width: 80vw;
 	transition: opacity 0.2s ease-in-out;
@@ -400,7 +400,7 @@ export default {
 .name-host,
 .name-garden {
 	position: absolute;
-	opacity: 0%;
+	opacity: 0;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -441,7 +441,7 @@ export default {
 	color: var(--color);
 	width: 160px;
 	padding-left: 72px;
-	opacity: 100%;
+	opacity: 1;
 }
 
 .btn-project:active .name-github {
@@ -591,7 +591,7 @@ export default {
 	filter: grayscale(100%) contrast(500%) blur(5px) invert(0%);
 	/* filter: grayscale(100%) contrast(500%) blur(5px); */
 	/* box-shadow: 0 0 150px 25px var(--inv-color) inset; */
-	opacity: 25%;
+	opacity: 0.25;
 	transition: background-image 0.3s ease-in-out;
 }
 
@@ -608,7 +608,7 @@ export default {
 	filter: grayscale(100%) contrast(500%) blur(5px) invert(100%);
 	/* filter: grayscale(100%) contrast(500%) blur(5px); */
 	/* box-shadow: 0 0 150px 25px var(--inv-color) inset; */
-	opacity: 25%;
+	opacity: 0.25;
 	transition: background-image 0.3s ease-in-out;
 }
 
@@ -699,7 +699,7 @@ export default {
 	.name-host,
 	.name-garden {
 		position: absolute;
-		opacity: 0%;
+		opacity: 0;
 		display: none;
 		justify-content: flex-start;
 		align-items: center;
@@ -735,7 +735,7 @@ export default {
 		color: var(--accent-color);
 		width: 160px;
 		padding-left: 72px;
-		opacity: 100%;
+		opacity: 1;
 	}
 }
 </style>

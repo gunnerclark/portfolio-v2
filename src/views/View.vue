@@ -718,6 +718,60 @@ export default {
 		color: var(--accent-color) !important;
 	}
 
+	.return-btn {
+		z-index: 2;
+		width: 7.25vh;
+		position: absolute;
+		/* bottom: 3.5vh; */
+		bottom: calc((15vh - 7vh) / 2);
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		display: none;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		opacity: 0;
+		transition: opacity 0.3s ease-in-out, width 0.1s ease-in-out;
+		/* z-index for projects vue; custom background */
+		z-index: 2;
+	}
+
+	/* START RETURN INV */
+	.return-btn-inv {
+		z-index: 2;
+		width: 7.25vh;
+		position: absolute;
+		/* bottom: 3.5vh; */
+		bottom: calc((15vh - 7vh) / 2);
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		display: none;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		opacity: 0;
+		transition: opacity 0.3s ease-in-out, width 0.1s ease-in-out;
+	}
+
+	.toggle-mode {
+		/* height / width was causing page to be higher than 100vh & scrollable */
+		width: 10vh;
+		height: 10vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: 1;
+		/* z-index for projects vue; custom background */
+		z-index: 2;
+	}
+
 	.toggle-mode button {
 		color: var(--color);
 		font-size: 30px;

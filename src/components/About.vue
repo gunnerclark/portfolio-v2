@@ -191,7 +191,7 @@ export default {
 	border-radius: 100%;
 	background: var(--color);
 	filter: blur(45px);
-	opacity: 25%;
+	opacity: 0.25;
 }
 
 .ico-intro-left {
@@ -200,7 +200,7 @@ export default {
 	top: 90vh;
 	left: calc((100vw - 90px) / 3);
 	color: var(--inv-color);
-	opacity: 15%;
+	opacity: 0.15;
 	transition: opacity 0.3s ease-in-out;
 }
 
@@ -210,7 +210,7 @@ export default {
 	top: 90vh;
 	right: calc((100vw - 90px) / 3);
 	color: var(--inv-color);
-	opacity: 15%;
+	opacity: 0.15;
 	transition: opacity 0.3s ease-in-out;
 }
 
@@ -314,14 +314,14 @@ export default {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	opacity: 50%;
+	opacity: 0.5;
 	/* margin-bottom: 0; */
 	/* border: 1px solid purple; */
 }
 
 .ico-bg {
 	background: var(--inv-color);
-	opacity: 25%;
+	opacity: 0.25;
 	height: 32.5vh;
 	width: 100vw;
 	display: flex;
@@ -434,8 +434,7 @@ export default {
 	}
 
 	.txt-intro {
-		margin-top: 15vh;
-		height: auto;
+		padding-top: 15vh;
 		align-items: center;
 		font-size: 20px;
 		line-height: 42px;
@@ -459,15 +458,15 @@ export default {
 
 	.ico-intro-left {
 		position: absolute;
-		/* top: 50vh; */
-		/* left: calc((100vw - 26vh) / 4); */
+		top: 75vh;
+		left: calc((100vw - 26vh) / 4);
 		color: var(--color);
 	}
 
 	.ico-intro-right {
 		position: absolute;
-		/* top: 67.5vh;
-		right: calc((100vw - 26vh) / 4); */
+		top: 75vh;
+		right: calc((100vw - 26vh) / 4);
 		color: var(--color);
 	}
 

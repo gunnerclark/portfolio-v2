@@ -110,9 +110,8 @@ export default {
 					document.getElementById('btn-contact').style.visibility =
 						'hidden';
 
-					document.getElementById('btn-mailTo').style.opacity =
-						'100%';
-					document.getElementById('btn-copy').style.opacity = '100%';
+					document.getElementById('btn-mailTo').style.opacity = '1';
+					document.getElementById('btn-copy').style.opacity = '1';
 					document.getElementById('btn-mailTo').style.height =
 						'100px';
 					document.getElementById('btn-copy').style.height = '100px';
@@ -137,8 +136,7 @@ export default {
 
 					document.getElementById('btn-overlay').style.height =
 						'100px';
-					document.getElementById('btn-overlay').style.opacity =
-						'100%';
+					document.getElementById('btn-overlay').style.opacity = '1';
 				}
 			}
 		},
@@ -207,7 +205,7 @@ export default {
 	align-items: center;
 	height: 32.5vh;
 	width: 100vw;
-	opacity: 25%;
+	opacity: 0.25;
 	background: var(--color);
 	color: var(--inv-color);
 }
@@ -273,7 +271,7 @@ export default {
 .btn-mailTo,
 .btn-copy {
 	visibility: hidden;
-	opacity: 0%;
+	opacity: 0;
 	border: none;
 	background: var(--color);
 	color: var(--inv-color);
@@ -307,7 +305,7 @@ export default {
 
 .btn-contact:hover .btn-overlay {
 	height: 200px;
-	opacity: 0%;
+	opacity: 0;
 }
 
 .btn-contact:hover .btn-mailTo,
@@ -331,7 +329,7 @@ export default {
 .btn-contact:hover .btn-mailTo,
 .btn-contact:hover .btn-copy {
 	visibility: visible;
-	opacity: 100%;
+	opacity: 1;
 }
 
 .btn-mailTo:active {

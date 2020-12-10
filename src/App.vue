@@ -4,6 +4,15 @@
 	</div>
 </template>
 
+<script>
+export default {
+	created() {
+		// sets the title of the site
+		document.title = 'gunner clark';
+	},
+};
+</script>
+
 <style>
 * {
 	margin: 0;
@@ -15,6 +24,7 @@
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	-webkit-tap-highlight-color: transparent;
 }
 
 *:focus {
